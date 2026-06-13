@@ -5,7 +5,7 @@ This file tracks advanced concepts and features to be implemented for the **Dick
 ## 🛡️ Security & Health
 - [ ] **Org-wide Dependabot:** Enable security alerts and automated PRs across all 260+ repositories.
 - [x] **Organization Health Repository:** Create a `.github` repository to host global templates (LICENSE, CONTRIBUTING, ISSUE_TEMPLATES).
-- [ ] **Secret Scanning:** Implement automated secret scanning across both accounts to prevent credential leaks.
+- [x] **Secret Scanning:** Implement automated secret scanning across both accounts to prevent credential leaks.
 
 ## 🏗️ Infrastructure & Build
 - [ ] **GitHub Container Registry (GHCR):** Migrate build artifacts to `ghcr.io` for versioned OCI image hosting.
@@ -13,7 +13,7 @@ This file tracks advanced concepts and features to be implemented for the **Dick
 - [ ] **Artifact Lifecycle Manager:** Automatically prune old build artifacts to stay within storage limits.
 
 ## ⚖️ Governance
-- [ ] **Global Repository Rulesets:** Enforce branch protection (no force-pushes, no deletions) across all repositories using a single org-level rule.
+- [x] **Global Repository Rulesets:** Enforce branch protection (no force-pushes, no deletions) across all repositories using a single org-level rule.
 - [ ] **License Injection:** Automatically detect repositories missing a LICENSE file and inject a standard one.
 - [ ] **Archival Automator:** Automatically archive repositories where the upstream has been deleted or inactive for > 2 years.
 
