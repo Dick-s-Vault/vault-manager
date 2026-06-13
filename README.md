@@ -6,6 +6,8 @@ Repository for managing the **RPDevs Vault** organization. This project serves a
 
 ## 📊 Comprehensive Status
 
+### 📦 [Organization Packages](https://github.com/orgs/RPDevs-Vault/packages)
+
 | Metric | Status | Last Updated |
 | :--- | :--- | :--- |
 | **Org-Wide Sync** | ![Sync Status](https://img.shields.io/badge/Status-Active-brightgreen) | Daily |
