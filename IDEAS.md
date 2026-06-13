@@ -19,4 +19,4 @@ This file tracks advanced concepts and features to be implemented for the **Dick
 
 ## 📊 Reporting
 - [x] **Organization Health Dashboard:** Create a GH Action that generates a markdown report of all "unhealthy" repos (missing labels, outdated, etc.).
-- [ ] **Notification Heatmap:** Track which repos generate the most noise and auto-adjust notification settings.
+- [x] **Notification Heatmap:** Track which repos generate the most noise and auto-adjust notification settings.
