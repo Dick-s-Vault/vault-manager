@@ -10,8 +10,8 @@ Repository for managing the **Dick's Vault** organization. This project serves a
 | :--- | :--- | :--- |
 | **Org-Wide Sync** | ![Sync Status](https://img.shields.io/badge/Status-Active-brightgreen) | Daily |
 | **Fork Health** | ![Fork Health](https://img.shields.io/badge/Health-Monitored-blue) | Weekly |
-| **Governance** | ![Policy Enforcement](https://img.shields.io/badge/Governance-Draft-yellow) | - |
-| **Cleanup Operations** | ![Cleanup](https://img.shields.io/badge/Cleanup-Pending-lightgrey) | - |
+| **Governance** | ![Policy Enforcement](https://img.shields.io/badge/Governance-Active-brightgreen) | - |
+| **Cleanup Operations** | ![Cleanup](https://img.shields.io/badge/Cleanup-Scheduled-blue) | - |
 
 ### 🛠️ Active Modules
 - **[Sync All Forks](./.github/workflows/sync-forks.yml):** Daily synchronization of forked repositories with their upstream sources.
