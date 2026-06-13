@@ -8,6 +8,7 @@ on:
 jobs:
   archive:
     runs-on: ubuntu-latest
+    environment: vault-core
     steps:
       - name: Identify & Archive Inactive Repos
         env:

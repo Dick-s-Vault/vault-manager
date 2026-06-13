@@ -8,6 +8,7 @@ on:
 jobs:
   archive:
     runs-on: ubuntu-latest
+    environment: vault-core
     steps:
       - name: Checkout Archive Repository
         uses: actions/checkout@v4

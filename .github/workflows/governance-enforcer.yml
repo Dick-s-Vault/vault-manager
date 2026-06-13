@@ -8,6 +8,7 @@ on:
 jobs:
   enforce:
     runs-on: ubuntu-latest
+    environment: vault-core
     steps:
       - name: Enforce Governance Policies
         env:

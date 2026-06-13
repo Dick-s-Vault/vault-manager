@@ -8,6 +8,7 @@ on:
 jobs:
   sync:
     runs-on: ubuntu-latest
+    environment: vault-core
     steps:
       - name: Sync Forks
         env:
