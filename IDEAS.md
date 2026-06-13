@@ -18,5 +18,5 @@ This file tracks advanced concepts and features to be implemented for the **Dick
 - [ ] **Archival Automator:** Automatically archive repositories where the upstream has been deleted or inactive for > 2 years.
 
 ## 📊 Reporting
-- [ ] **Organization Health Dashboard:** Create a GH Action that generates a markdown report of all "unhealthy" repos (missing labels, outdated, etc.).
+- [x] **Organization Health Dashboard:** Create a GH Action that generates a markdown report of all "unhealthy" repos (missing labels, outdated, etc.).
 - [ ] **Notification Heatmap:** Track which repos generate the most noise and auto-adjust notification settings.

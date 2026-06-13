@@ -20,8 +20,12 @@ Repository for managing the **Dick's Vault** organization. This project serves a
 - **[Merged Branch Cleanup](./.github/workflows/cleanup-branches.yml):** Weekly removal of merged git branches.
 - **[Notification Streamliner](./.github/workflows/streamline-notifications.yml):** Daily noise reduction for GitHub notifications.
 - **[Organization Archive Engine](./.github/workflows/archive-engine.yml):** Weekly monorepo backup of all fork upstreams in IamRPDev and Dick-s-Vault.
+- **[Organization Health Dashboard](./.github/workflows/health-dashboard.yml):** Weekly automated reporting on organization metrics and metadata health.
 
 ---
+
+<!-- HEALTH_DASHBOARD_START -->
+<!-- HEALTH_DASHBOARD_END -->
 
 ## 📋 Management Tasks
 
