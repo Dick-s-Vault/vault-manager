@@ -3,7 +3,7 @@
 This file tracks advanced concepts and features to be implemented for the **Dick-s-Vault** organization.
 
 ## 🛡️ Security & Health
-- [ ] **Org-wide Dependabot:** Enable security alerts and automated PRs across all 260+ repositories.
+- [x] **Org-wide Dependabot:** Enable security alerts and automated PRs across all 260+ repositories.
 - [x] **Organization Health Repository:** Create a `.github` repository to host global templates (LICENSE, CONTRIBUTING, ISSUE_TEMPLATES).
 - [x] **Secret Scanning:** Implement automated secret scanning across both accounts to prevent credential leaks.
 
@@ -14,7 +14,7 @@ This file tracks advanced concepts and features to be implemented for the **Dick
 
 ## ⚖️ Governance
 - [x] **Global Repository Rulesets:** Enforce branch protection (no force-pushes, no deletions) across all repositories using a single org-level rule.
-- [ ] **License Injection:** Automatically detect repositories missing a LICENSE file and inject a standard one.
+- [x] **License Auditing:** Automatically detect repositories missing a LICENSE file and inject a standard one.
 - [ ] **Archival Automator:** Automatically archive repositories where the upstream has been deleted or inactive for > 2 years.
 
 ## 📊 Reporting
