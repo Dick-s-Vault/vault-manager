@@ -16,14 +16,22 @@ jobs:
           REPOS=$(gh repo list Dick-s-Vault --limit 1000 --json nameWithOwner --jq '.[].nameWithOwner')
           
           for repo in $REPOS; do
-            echo "Checking $repo..."
-            # Get default branch
+            echo "Processing $repo..."
             DEFAULT_BRANCH=$(gh repo view "$repo" --json defaultBranchRef --jq '.defaultBranchRef.name')
             
-            # List merged branches (excluding default)
-            # This is a bit complex via API, often easier to skip or use a dedicated action per repo,
-            # but we can try to list branches and check their merge status.
-            # For simplicity and safety in an org-wide script, we will only log for now 
-            # or use a more targeted approach if requested.
-            echo "Default branch for $repo is $DEFAULT_BRANCH"
+            # Get all branches except the default one
+            BRANCHES=$(gh api "/repos/$repo/branches" --jq '.[] | select(.name != "'"$DEFAULT_BRANCH"'") | .name')
+            
+            for branch in $BRANCHES; do
+              # Check if branch is merged into default
+              # Using the comparison API: if the branch is 'behind' or 'identical' to default, it's merged.
+              STATUS=$(gh api "/repos/$repo/compare/$DEFAULT_BRANCH...$branch" --jq '.status')
+              
+              if [[ "$STATUS" == "behind" || "$STATUS" == "identical" ]]; then
+                echo "Branch $branch in $repo is merged. Deleting..."
+                gh api -X DELETE "/repos/$repo/git/refs/heads/$branch" || echo "Failed to delete $branch"
+              else
+                echo "Branch $branch in $repo is NOT merged ($STATUS). Skipping."
+              fi
+            done
           done

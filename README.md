@@ -9,14 +9,16 @@ Repository for managing the **Dick's Vault** organization. This project serves a
 | Metric | Status | Last Updated |
 | :--- | :--- | :--- |
 | **Org-Wide Sync** | ![Sync Status](https://img.shields.io/badge/Status-Active-brightgreen) | Daily |
-| **Fork Health** | ![Fork Health](https://img.shields.io/badge/Health-Monitored-blue) | Weekly |
-| **Governance** | ![Policy Enforcement](https://img.shields.io/badge/Governance-Active-brightgreen) | - |
-| **Cleanup Operations** | ![Cleanup](https://img.shields.io/badge/Cleanup-Scheduled-blue) | - |
+| **Fork Health** | ![Fork Health](https://img.shields.io/badge/Health-Monitoring-brightgreen) | Weekly |
+| **Governance** | ![Policy Enforcement](https://img.shields.io/badge/Governance-Active-brightgreen) | Weekly |
+| **Cleanup Operations** | ![Cleanup](https://img.shields.io/badge/Cleanup-Active-brightgreen) | Weekly |
 
 ### 🛠️ Active Modules
-- **[Sync All Forks](./.github/workflows/sync-forks.yml):** Daily synchronization of forked repositories with their upstream sources.
-- **Label Manager (In Progress):** Standardizing labels across the organization.
-- **Policy Enforcer (Planned):** Automated file injection (LICENSE, README templates).
+- **[Sync All Forks](./.github/workflows/sync-forks.yml):** Daily synchronization of forked repositories.
+- **[Label Standardizer](./.github/workflows/label-standardizer.yml):** Weekly enforcement of standard issue labels.
+- **[Stale Fork Auditor](./.github/workflows/stale-fork-auditor.yml):** Weekly check for archived/deleted upstream repos.
+- **[Merged Branch Cleanup](./.github/workflows/cleanup-branches.yml):** Weekly removal of merged git branches.
+- **[Notification Streamliner](./.github/workflows/streamline-notifications.yml):** Daily noise reduction for GitHub notifications.
 
 ---
 
